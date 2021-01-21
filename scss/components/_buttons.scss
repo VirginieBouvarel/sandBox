@@ -1,0 +1,32 @@
+%btn { //Classe abstraite qui ne sera jamais utilisée directement dans le html
+    color: #fff;
+    text-decoration: none;
+    width: 8rem;
+    padding: 0.7rem 2rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    text-align:center;
+    cursor:pointer;
+
+    &:hover {
+        transform: scale(.98);
+    }
+}
+
+
+.btns {
+    margin: 3rem 0 0;
+}
+
+.btn-plus {
+    @extend %btn; // Héritage complet
+    background-color: salmon;
+}
+.btn-submit {
+    @extend %btn;
+    background-color: #32cd32;
+}
+.btn-back {
+    @extend %btn;
+    background-color: $color-text-active;
+}

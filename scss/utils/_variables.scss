@@ -1,0 +1,11 @@
+$color-text-base: salmon;
+$color-text-active: darken($color-text-base, 20); // Utilisation d'une fonction native de sass
+$color-bg-black:#333;
+
+$weights: ( // création d'une map
+    "lighter": 200,
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+    "bolder": 900
+);

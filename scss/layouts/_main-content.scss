@@ -1,0 +1,64 @@
+.hero {
+    background: salmon;
+    height: add(100px, 200px); // Utilisation d'une fonction
+    margin: 1rem 0;
+    @include flexCenter; // Utilisation d'une mixin
+
+    .box {
+        background: bisque;
+        width: 100px;
+        height: 100px;
+        color: $color-text-active;
+    }
+}
+
+
+
+.presentation {
+   @extend %section;   
+}
+
+.keypoints {
+    @extend %section;
+
+    ul {
+        @extend %keypoints;
+        li {
+            width:30%;
+            padding:1rem;
+            @include backgroundColor(#fff); 
+
+            &:nth-child(even) {
+                @include backgroundColor($color-text-base);
+            }
+        }
+        
+    }
+
+}
+
+.team {
+    @extend %section;
+
+    ul {
+        @extend %keypoints;
+    }
+
+    li {
+        width:23%;
+        height:18rem;
+        // position:relative;
+    }
+    p {
+        position:relative;
+        top:13rem;
+        margin:0 auto;
+        padding:1rem;
+        width:70%;
+        border: 2px solid $color-text-base;
+        color:$color-text-base;
+        font-size:2rem;
+        font-weight:map-get($weights, bold);
+    }
+}
+    

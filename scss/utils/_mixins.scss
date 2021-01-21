@@ -1,0 +1,11 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin backgroundColor($color) {
+    background-color: $color;
+    color: setTitleColorByBkg($color);
+}
+

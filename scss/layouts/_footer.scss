@@ -1,0 +1,11 @@
+footer {
+    background:$color-bg-black;
+    height:15rem;
+    text-align:center;
+    color:$color-text-base;
+    
+    .copyright {
+        position:relative;
+        top:12rem;
+    }
+}

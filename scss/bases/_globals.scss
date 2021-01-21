@@ -1,0 +1,57 @@
+body {
+    color:$color-bg-black;
+}
+
+.container {
+    max-width:1100px;
+    padding: 0 2rem;
+    margin:0 auto;
+}
+
+
+$spaceamounts: (1,2,3);// Utilisation d'une liste
+
+@each $space in $spaceamounts {// Utilisation d'une boucle each
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+}
+
+%section {
+    background: bisque;
+    padding: 1rem 1rem 5rem;
+    margin: 1rem 0;
+
+    .title {
+        font-size: 46px;
+        font-weight: map-get($weights, bolder); // utilisation d'une map
+        color: $color-text-base;
+        background-color: #fff;
+        padding-left:1rem;
+    }
+    .subtitle {
+        @extend .title; // Héritage simple
+        font-size: 24px;
+    }
+}
+
+%keypoints {
+    list-style-type:none;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+$teammates: ("jude", "thomas", "spencer", "lens"); // Création d'une liste de teammate
+@each $teammate in $teammates { // Utilisation d'une boucle @each pour créer une classe par teammate
+    .#{$teammate} {
+        background: url('../img/#{$teammate}.jfif') no-repeat top 2rem left 2.8rem, #fff;
+    }
+}
+

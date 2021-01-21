@@ -1,0 +1,17 @@
+
+@import 'reset/normalize'; // le link html n'est plus utile
+
+@import 'utils/variables'; // Imports des pages non compilées
+@import 'utils/functions';
+@import 'utils/mixins';
+
+@import 'bases/globals';
+
+@import 'components/buttons';
+
+@import 'layouts/header';
+@import 'layouts/main-content';
+@import 'layouts/footer';
+
+
+@import 'mobile';

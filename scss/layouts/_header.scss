@@ -1,0 +1,20 @@
+.header { // Exemple de nesting (se limiter à 2 voire 3 niveaux d'indentiation)
+    background: $color-bg-black;
+
+    ul {
+        list-style-type: none;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: flex-end;
+
+        li { 
+            color: $color-text-base; // Utilisation d'une variable
+            margin-right: 1rem;
+    
+            &:first-child {
+                color: $color-text-active;
+            }
+        }
+    }
+
+}

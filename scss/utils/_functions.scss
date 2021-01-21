@@ -1,0 +1,11 @@
+@function add($value1, $value2) {
+    @return $value1 + $value2;
+}
+
+@function setTitleColorByBkg($color) { // utilisation d'une condition
+    @if (lightness($color) > 99) {
+        @return $color-text-base;
+    } @else {
+        @return #fff;
+    }
+}

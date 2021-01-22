@@ -17,16 +17,16 @@
 .btns {
     margin: 3rem 0 0;
 }
-
+.btn-back {
+    @extend %btn;
+    background-color: $fff;
+    color:$color-text-base;
+}
 .btn-plus {
     @extend %btn; // Héritage complet
     background-color: salmon;
 }
 .btn-submit {
     @extend %btn;
-    background-color: #32cd32;
-}
-.btn-back {
-    @extend %btn;
-    background-color: $color-text-active;
+    background-color: #7ab47a;
 }

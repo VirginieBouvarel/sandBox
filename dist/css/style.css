@@ -422,7 +422,7 @@ body {
   background: url("../img/lens.jfif") no-repeat top 2rem left 2.8rem, #fff;
 }
 
-.btn-plus, .btn-submit, .btn-back {
+.btn-back, .btn-plus, .btn-submit {
   color: #fff;
   text-decoration: none;
   width: 8rem;
@@ -433,7 +433,7 @@ body {
   cursor: pointer;
 }
 
-.btn-plus:hover, .btn-submit:hover, .btn-back:hover {
+.btn-back:hover, .btn-plus:hover, .btn-submit:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }
@@ -442,16 +442,17 @@ body {
   margin: 3rem 0 0;
 }
 
+.btn-back {
+  background-color: #fff;
+  color: salmon;
+}
+
 .btn-plus {
   background-color: salmon;
 }
 
 .btn-submit {
-  background-color: #32cd32;
-}
-
-.btn-back {
-  background-color: #f7270f;
+  background-color: #7ab47a;
 }
 
 .header {
@@ -554,7 +555,7 @@ footer .copyright {
         -ms-flex-align: center;
             align-items: center;
   }
-  .btn-plus, .btn-submit, .btn-back {
+  .btn-back, .btn-plus, .btn-submit {
     margin: 0 0 0.5rem 0;
   }
 }

@@ -1,9 +1,12 @@
-# Sass sandBox
+### Live version [here](https://virginiebouvarel.github.io/sass-sandbox/dist/).
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
+# Sass sandbox
 
+![Design preview for this project ](./src/preview.png)
 
+## Détails
 
-[Voir la démo](https://virginiebouvarel.github.io/sass-sandbox/dist/)
+> Technos utilisées : HTML/CSS/SASS
 
+Mini projet pour découvrir sass et ses différentes fonctionnalités.<br><br>
 

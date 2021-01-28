@@ -535,6 +535,7 @@ footer {
   height: 15rem;
   text-align: center;
   color: salmon;
+  margin-bottom: 2rem;
 }
 
 footer .copyright {
